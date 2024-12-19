@@ -6,6 +6,10 @@ export default {
       fontFamily: {
         playfair: ['Playfair Display', 'serif'],
       },
+      backgroundImage: {
+        'hero-01': "url('/src/assets/ha01.png')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      }
     },
   },
   plugins: [],

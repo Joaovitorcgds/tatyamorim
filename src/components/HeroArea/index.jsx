@@ -1,5 +1,5 @@
-import videobg from "../../assets/videobg.mp4"
-import imagebg from "../../assets/ha03.png"
+import videobg from "../../assets/videobcg2.mp4"
+import imagebg from "../../assets/imgbcg.png"
 import { useEffect } from 'react';
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
@@ -22,7 +22,7 @@ export function HeroArea() {
     <>
     <div className="relative w-full h-screen">
       {/*Overlay*/}
-      <div className="inset-0 w-screen h-screen object-cover absolute bg-overlay z-10"></div>
+      <div className="inset-0 w-full h-screen object-cover absolute bg-overlay z-10"></div>
 
       
       {/* Hero Area */}

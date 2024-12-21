@@ -7,7 +7,8 @@ export default {
         playfair: ['Playfair Display', 'serif'],
       },
       colors: {
-        'overlay': "rgba(0,0,0,.3)",
+        'overlay': "rgba(0,0,0,.7)",
+        "primary": "#E0A2A2"
       }
     }
   },

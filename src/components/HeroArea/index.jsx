@@ -36,7 +36,7 @@ export function HeroArea() {
       </div>
 
       {/* Tailwind Responsiveness: For Mobile */}
-      <video id="meuVideo" src={videobg} loop muted className="w-screen h-screen object-cover absolute inset-0 bg-cover bg-center md:hidden"></video>
+      <video id="meuVideo" src={videobg} autoPlay loop muted className="w-screen h-screen object-cover absolute inset-0 bg-cover bg-center md:hidden"></video>
     </div>
     </>
   );

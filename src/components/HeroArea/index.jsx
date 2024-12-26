@@ -1,22 +1,17 @@
-import videobg from "../../assets/videobcg2.mp4"
+import videobg from "../../assets/videobcg.mp4"
 import imagebg from "../../assets/imgbcg.png"
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
 
 export function HeroArea() {
-  useEffect(() => {
-    window.addEventListener('load', function() {
-      var video = document.getElementById('meuVideo');
-      video.play(); // Reproduz o vídeo
-    });
-
-    // AOS.init({
-    //   duration: 1000,
-    //   easing: 'ease-in-out',
-    //   once: true,
-    // });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000,
+  //     easing: 'ease-in-out',
+  //     once: true,
+  //   });
+  // }, []);
 
   return (
     <>
@@ -36,7 +31,7 @@ export function HeroArea() {
       </div>
 
       {/* Tailwind Responsiveness: For Mobile */}
-      <video id="meuVideo" src={videobg} loop muted className="w-screen h-screen object-cover absolute inset-0 bg-cover bg-center md:hidden"></video>
+      <video id="meuVideo" src={videobg} playsInline autoPlay loop muted className="w-screen h-screen object-cover absolute inset-0 bg-cover bg-center md:hidden"></video>
     </div>
     </>
   );

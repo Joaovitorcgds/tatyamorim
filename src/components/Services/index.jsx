@@ -44,7 +44,7 @@ export function Services() {
 
 
     return (
-        <section className="flex flex-col justify-between items-center py-10 px-4 bg-[#f0dedc] w-full h-auto">
+        <section className="flex flex-col justify-between items-center pt-10 px-4 bg-[#f0dedc] w-full h-auto">
             
             <div>
                 <h2 className="text-4xl md:text-7xl font-bold text-center text-primary mb-2">Nossos Serviços</h2>
@@ -63,7 +63,7 @@ export function Services() {
                 ))}
             </div>
 
-            <div className="relative mt-12">
+            <div className="relative mt-16">
               <div className="absolute -inset-0.5 bg-[#b5676c] rounded-lg blur opacity-50 hover:opacity-100 animation-pulse transition duration-500 hover:scale-102"></div>
               <button className='relative leading-none bg-white flex itens-center px-9 py-4 rounded-lg font-semibold text-xl text-primary hover:scale-102'>Agende seu horário</button>
             </div>

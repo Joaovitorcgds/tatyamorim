@@ -1,6 +1,7 @@
 import React from 'react';
 import image1 from "../../assets/image1.jpg"
-const About = () => {
+
+export function Services() {
 
     const services = [
         {
@@ -52,7 +53,7 @@ const About = () => {
 
             <div className="md:w-2/3 h-auto grid grid-cols-2 grid-rows-2 md:grid-cols-4 gap-4">
                 {services.map((service, index) => (
-                    <div key={index} className={`${service.colSpan} ${service.rowSpan} relative bg-gray-800 rounded-lg overflow-hidden hover:cursor-pointer`}>
+                    <div key={index} className={`${service.colSpan} ${service.rowSpan} relative bg-gray-800 rounded-lg overflow-hidden hover:scale-102 hover:cursor-pointer hover:brightness-125 transition duration-600`}>
                         <div className="inset-0 w-full h-auto object-cover absolute bg-overlayServices z-10 hover:none"></div>
                         <img src={service.image} alt={service.title} className="w-full object-cover opacity-70"/>
                         <div className="absolute inset-0 flex items-center justify-center">
@@ -64,5 +65,3 @@ const About = () => {
         </section>
   );
 }
-
-export default About;

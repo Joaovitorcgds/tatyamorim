@@ -1,65 +1,67 @@
 import React from 'react';
 import image1 from "../../assets/image1.jpg"
 const About = () => {
-  return (
-    <section className="flex flex-col justify-between items-center py-10 px-4 bg-[#F8F8F8] w-full h-screen">
-        
-        <div>
-            <h2 className="text-4xl md:text-7xl font-bold text-center text-primary mb-2">Nossos Serviços</h2>
-            <p className="text-center mb-10">Confira abaixo os serviços que o Studio de beleza Tatiane amorim pode promover para o bem-estar dos seus clientes.</p>
-        </div>
 
-        <div className="grid grid-cols-2 gap-8">
-            {/* Primeira Foto da Primeira Coluna */}
-            <div className="relative top-16">
-            <img src={image1} alt="Imagem 1" className="w-full h-full object-cover" />
-            </div>
-            
-            {/* Primeira Foto da Segunda Coluna - Começando na metade da primeira imagem */}
-            <div className="relative self-end">
-            <img src={image1} alt="Imagem 2" className="w-full h-full object-cover" />
-            </div>
-
-            {/* Segunda Foto da Primeira Coluna */}
-            <div className="relative top-16 self-start">
-            <img src={image1} alt="Imagem 3" className="w-full h-full object-cover" />
-            </div>
-
-            {/* Segunda Foto da Segunda Coluna - Começando na metade da segunda imagem */}
-            <div className="relative self-end">
-            <img src={image1} alt="Imagem 4" className="w-full h-full object-cover" />
-            </div>
-
-            {/* Terceira Foto da Primeira Coluna */}
-            <div className="relative top-16 self-start">
-            <img src={image1} alt="Imagem 5" className="w-full h-full object-cover" />
-            </div>
-
-            {/* Terceira Foto da Segunda Coluna - Começando na metade da terceira imagem */}
-            <div className="relative self-end">
-            <img src={image1} alt="Imagem 6" className="w-full h-full object-cover" />
-            </div>
-        </div>
+    const services = [
+        {
+          title: "Mechas",
+          image: `${image1}`, // substitua pelo link correto ou use imagens locais
+          colSpan: "col-span-2",
+          rowSpan: "row-span-2",
+          height: "w-auto"
+        },
+        {
+          title: "Progressivas",
+          image: `${image1}`,
+          colSpan: "col-span-1",
+          rowSpan: "row-span-1",
+          height: "h-1/2"
+        },
+        {
+          title: "Cortes",
+          image: `${image1}`,
+          colSpan: "col-span-1",
+          rowSpan: "row-span-1",
+          height: "h-1/2"
+        },
+        {
+          title: "Maquiagens e Penteados",
+          image: `${image1}`,
+          colSpan: "col-span-1",
+          rowSpan: "row-span-1",
+          height: "h-1/2"
+        },
+        {
+          title: "Galeria de fotos",
+          image: `${image1}`,
+          colSpan: "col-span-1",
+          rowSpan: "row-span-1",
+          height: "h-1/2"
+        },
+      ];
     
 
-        {/* <div className="flex justify-center space-x-8">
 
-            <div className="bg-white shadow-lg p-6 rounded-lg w-64">
-                <img src="penteado1.jpg" alt="Penteado para Casamento" className="w-full h-40 object-cover rounded-t-lg" />
-                <h3 className="text-xl font-semibold mt-4">Mechas</h3>
-                <p className="text-gray-600">Transforme seu look para o grande dia com nossos penteados exclusivos.</p>
-                <button className="mt-4 text-blue-600 hover:underline">Agende seu horário</button>
-            </div>
-
-            <div className="bg-white shadow-lg p-6 rounded-lg w-64">
-                <img src="corte1.jpg" alt="Corte de Cabelo" className="w-full h-40 object-cover rounded-t-lg" />
-                <h3 className="text-xl font-semibold mt-4">Cortes de Cabelo</h3>
-                <p className="text-gray-600">Dê um novo estilo ao seu visual com nossos cortes modernos.</p>
-                <button className="mt-4 text-blue-600 hover:underline">Veja os estilos</button>
-            </div>
+    return (
+        <section className="flex flex-col justify-between items-center py-10 px-4 bg-[#f0dedc] w-full h-auto">
             
-        </div> */}
-    </section>
+            <div>
+                <h2 className="text-4xl md:text-7xl font-bold text-center text-primary mb-2">Nossos Serviços</h2>
+                <p className="text-center md:font-semibold mb-10">Confira abaixo os serviços que o Studio de beleza Tatiane amorim pode promover para o bem-estar dos seus clientes.</p>
+            </div>
+
+            <div className="md:w-2/3 h-auto grid grid-cols-2 grid-rows-2 md:grid-cols-4 gap-4">
+                {services.map((service, index) => (
+                    <div key={index} className={`${service.colSpan} ${service.rowSpan} relative bg-gray-800 rounded-lg overflow-hidden hover:cursor-pointer`}>
+                        <div className="inset-0 w-full h-auto object-cover absolute bg-overlayServices z-10 hover:none"></div>
+                        <img src={service.image} alt={service.title} className="w-full object-cover opacity-70"/>
+                        <div className="absolute inset-0 flex items-center justify-center">
+                            <span className="text-white text-lg md:text-2xl font-bold text-center z-20"> {service.title} </span>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </section>
   );
 }
 

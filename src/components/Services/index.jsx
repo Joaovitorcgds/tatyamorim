@@ -68,7 +68,7 @@ export function Services() {
 
             <div className="relative mt-16 hover:scale-102 animation-pulse">
               <div className="absolute -inset-0.5 bg-[#b5676c] rounded-lg blur opacity-50 hover:opacity-100 transition duration-500 "></div>
-              <a href="https://api.whatsapp.com/send?phone=55219822370&text=Ol%C3%A1,%20gostaria%20de%20agendar%20um%20hor%C3%A1rio" target="_blank" rel='norefer'>
+              <a href="https://api.whatsapp.com/send?phone=5521982237042&text=Ol%C3%A1,%20gostaria%20de%20agendar%20um%20hor%C3%A1rio" target="_blank" rel='norefer'>
                 <button  className='relative leading-none bg-[#f8f8f8] flex itens-center px-9 py-4 rounded-lg font-semibold text-xl text-primary '>Agende seu horário</button>
               </a>
             </div>

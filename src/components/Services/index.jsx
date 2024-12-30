@@ -1,5 +1,5 @@
 import React from 'react';
-import mechas from "../../assets/services/mechasImg.jpg"
+import mechas from "../../assets/services/mechaImg.jpg"
 import progressiva from "../../assets/services/progressivaImg.jpg"
 import corte from "../../assets/services/corteImg.jpg"
 import penteado from "../../assets/services/penteadoImg.jpg"

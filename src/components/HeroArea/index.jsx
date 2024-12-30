@@ -27,7 +27,7 @@ export function HeroArea() {
       {/* Hero content */}
       <div className="relative z-20 flex flex-col justify-center items-center h-full text-center text-white">
         <h1 className="font-playfair text-center mb-1 text-5xl md:text-7xl">Tatiane Amorim</h1>
-        <span className="font-playfair text-center text-lg md:text-xl">Especialista em Mechas e Penteados</span>
+        <span className="font-playfair text-center text-lg md:text-xl">Especialista em Mechas</span>
       </div>
 
       {/* Tailwind Responsiveness: For Mobile */}

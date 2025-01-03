@@ -3,6 +3,7 @@ import { Services } from './components/Services';
 import { HeroArea } from './components/HeroArea';
 import { WhoIs } from './components/WhoIs';
 import { WhatsAppIcon } from './components/WhatsAppIcon';
+import { RentSpace } from './components/RentSpace';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <HeroArea/>
       <Services/>
       <WhoIs/>
+      <RentSpace/>
     </>
   );
 }

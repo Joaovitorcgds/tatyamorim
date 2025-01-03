@@ -3,6 +3,9 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      width: {
+        'custom': 'calc(227% + 1.3px)',
+      },
       animation: {
         pulse: 'pulse-custom 1s infinite',
       },

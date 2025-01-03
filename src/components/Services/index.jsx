@@ -6,7 +6,6 @@ import penteado from "../../assets/services/penteadoImg.jpg"
 import galeria from "../../assets/services/galeriaImg.jpg"
 
 import { BsWhatsapp } from "react-icons/bs";
-import { ImWhatsapp } from "react-icons/im";
 
 
 export function Services() {

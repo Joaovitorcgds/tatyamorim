@@ -1,5 +1,5 @@
 import React from 'react';
-import WhoAmI from "../../assets/WhoAmI.jpg"
+import WhoAmI from "../../assets/WhoAmI.webp"
 
 export function WhoIs() {
 

@@ -1,5 +1,5 @@
 import videobg from "../../assets/videobcg.mp4"
-import imagebg from "../../assets/imgbcg.png"
+import imagebg from "../../assets/imgbcg.webp"
 // import { useEffect } from 'react';
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';

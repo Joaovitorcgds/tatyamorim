@@ -1,9 +1,8 @@
 import { Services } from './components/Services';
-// import { Header } from './components/Header';
 import { HeroArea } from './components/HeroArea';
 import { WhoIs } from './components/WhoIs';
 import { WhatsAppIcon } from './components/WhatsAppIcon';
-import { RentSpace } from './components/RentSpace';
+import { Course } from './components/Course';
 
 function App() {
   return (
@@ -14,7 +13,7 @@ function App() {
       <HeroArea/>
       <Services/>
       <WhoIs/>
-      <RentSpace/>
+      <Course/>
     </>
   );
 }

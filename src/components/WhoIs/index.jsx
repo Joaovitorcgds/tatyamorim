@@ -1,5 +1,5 @@
 import React from 'react';
-import WhoAmI from "../../assets/WhoAmI.jpg"
+import WhoAmI from "../../assets/WhoAmI.webp"
 
 export function WhoIs() {
 
@@ -13,7 +13,7 @@ export function WhoIs() {
             </div>
 
             <div className="flex justify-center">
-                <img src={WhoAmI} alt="imagem de Tatiane Amorim" className="w-2/3 md:w-3/4 max-w-xl rounded-lg shadow-2xl"/>
+                <img src={WhoAmI} alt="imagem de Tatiane Amorim" className="w-2/3 md:w-3/4 max-w-xl rounded-lg shadow-xl"/>
             </div>
         </section>
   );

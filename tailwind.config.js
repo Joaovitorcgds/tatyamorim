@@ -1,16 +1,12 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+import withMT from "@material-tailwind/react/utils/withMT";
+
+export default withMT({
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      animation: {
-        pulse: 'pulse-custom 1s infinite',
-      },
-      keyframes: {
-        'pulse-custom': {
-          '0%, 100%': { opacity: 1,},
-          '50%': { opacity: 0.5,},
-        },
+      width: {
+        'custom': 'calc(227% + 1.3px)',
       },
       fontFamily: {
         playfair: ['Playfair Display', 'serif'],
@@ -26,4 +22,4 @@ export default {
     }
   },
   plugins: [],
-};
+});

@@ -1,15 +1,19 @@
 import { Services } from './components/Services';
-// import { Header } from './components/Header';
 import { HeroArea } from './components/HeroArea';
 import { WhoIs } from './components/WhoIs';
+import { WhatsAppIcon } from './components/WhatsAppIcon';
+import { Course } from './components/Course';
 
 function App() {
   return (
     <>
-      {/* <Header /> */}
+      <div className='relative'>
+        <WhatsAppIcon/>
+      </div>
       <HeroArea/>
       <Services/>
       <WhoIs/>
+      <Course/>
     </>
   );
 }

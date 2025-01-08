@@ -32,7 +32,7 @@ export function Course() {
       <div className='flex flex-col w-full md:flex-row  justify-around gap-6'>
         <CarouselCourse/>
 
-        <div className='flex items-center justify-between md:items-start flex-col'>
+        <div className='flex items-center justify-around md:items-start flex-col'>
 
           <div className="grid grid-cols-1 gap-4 md:gap-6">
             {items.map((item, index) => (

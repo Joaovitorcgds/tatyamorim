@@ -26,13 +26,13 @@ export function Course() {
 
       <div className='pt-6'>
         <h2 className="text-4xl md:text-7xl font-bold text-center text-[#f0dedc] mb-2">Domine a Arte das Mechas</h2>
-        <p className="text-center text-[#f8f8f8] font-semibold mb-10">No curso prático você vai aprender técnicas que elevará sua carreira encantando e fidelizando clientes.</p>
+        <p className="text-center text-[#f8f8f8] font-semibold mb-10">No curso prático você vai aprender técnicas que elevarão sua carreira encantando e fidelizando clientes.</p>
       </div>
 
       <div className='flex flex-col w-full md:flex-row  justify-around gap-6'>
         <CarouselCourse/>
 
-        <div className='flex items-center justify-between md:items-start flex-col'>
+        <div className='flex items-center justify-around md:items-start flex-col'>
 
           <div className="grid grid-cols-1 gap-4 md:gap-6">
             {items.map((item, index) => (

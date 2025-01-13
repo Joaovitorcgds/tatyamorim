@@ -52,7 +52,7 @@ export function CarouselCourse() {
       </div>
     )}>
       {courseIMG.map((course, index) => (
-        <img src={course.image} alt={course.alt} className="h-full w-full object-cover"/>
+        <img key={index} src={course.image} alt={course.alt} className="h-full w-full object-cover"/>
       ))}
     </Carousel>
   );

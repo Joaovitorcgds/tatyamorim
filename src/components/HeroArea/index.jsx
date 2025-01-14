@@ -19,7 +19,6 @@ export function HeroArea() {
       {/*Overlay*/}
       <div className="inset-0 w-full h-screen object-cover absolute bg-overlay z-10"></div>
 
-      
       {/* Hero Area */}
       <img src={imagebg} className="w-screen h-screen object-cover absolute inset-0 hidden md:block"
       />

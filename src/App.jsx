@@ -5,6 +5,7 @@ import { WhatsAppIcon } from './components/WhatsAppIcon';
 import { Course } from './components/Course';
 import { Salon } from './components/Salon';
 import { MyMap } from './components/Maps';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Course/>
       <Salon/>
       <MyMap/>
+      <Footer/>
     </>
   );
 }

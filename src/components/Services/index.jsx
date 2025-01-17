@@ -65,7 +65,7 @@ export function Services() {
                       pointerEvents:"none"}}></div>
                         <img src={service.image} alt={service.title} className="w-full object-contain opacity-70"/>
                         <div className="absolute text-white inset-0 flex flex-col md:flex-row  items-center justify-center z-10 md:gap-2">
-                            <span className="text-lg md:text-xl font-bold text-center"> 
+                            <span className="text-xl font-bold text-center"> 
                               {service.title}
                             </span>
                             <PiInstagramLogoBold size={25}/>
@@ -80,7 +80,7 @@ export function Services() {
                       <div className="inset-0 w-full h-auto object-cover absolute bg-overlayServices z-10 hover:none"></div>
                       <img src={service.image} alt={service.title} className="w-full object-contain opacity-70"/>
                       <div className="absolute inset-0 flex items-center justify-center">
-                          <span className="text-white text-lg md:text-xl text-wrap font-bold text-center z-10"> {service.title}</span>
+                          <span className="text-white text-xl text-wrap font-bold text-center z-10"> {service.title}</span>
                       </div>
                   </div>
                 )

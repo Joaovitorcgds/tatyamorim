@@ -23,11 +23,14 @@ export function HeroArea() {
 
       {/* Placeholder (Imagem estática) */}
       {!isVideoLoaded && (
-        <img
-          src={imagebgMobile}
-          alt="Background"
-          className="absolute inset-0 w-full h-full object-cover z-10 bg-overlay"
-        />
+        <div className='absolute inset-0 w-full h-full'>
+          <div className="inset-0 w-full h-screen object-cover absolute bg-overlay z-10"></div>
+          <img
+            src={imagebgMobile}
+            alt="Background"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        </div>
       )}
       <video preload="auto" playsInline autoPlay loop muted onLoadedData={() => setIsVideoLoaded(true)}
       className="w-screen h-screen object-cover absolute inset-0 bg-cover bg-center md:hidden">

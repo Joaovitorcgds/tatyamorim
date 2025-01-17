@@ -5,6 +5,9 @@ export default withMT({
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      screens: {
+        'lg': '890px',
+      },
       width: {
         'custom': 'calc(227% + 1.3px)',
       },

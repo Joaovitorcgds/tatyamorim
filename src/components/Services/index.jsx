@@ -6,6 +6,7 @@ import penteado from "../../assets/services/penteadoImg.webp"
 import galeria from "../../assets/services/galeriaImg.webp"
 
 import { BsWhatsapp } from "react-icons/bs";
+import { PiInstagramLogoBold } from "react-icons/pi";
 
 
 export function Services() {
@@ -39,7 +40,7 @@ export function Services() {
           height: "h-1/2"
         },
         {
-          title: "Galeria de fotos",
+          title: "Instagram",
           image: `${galeria}`,
           colSpan: "col-span-1",
           rowSpan: "row-span-1",
@@ -54,7 +55,7 @@ export function Services() {
             <p className="text-center text-[#9e4d53] md:font-semibold mb-10">Confira abaixo os serviços que o Studio de beleza Tatiane amorim pode promover para o bem-estar dos seus clientes.</p>
         </div>
 
-        <div className="md:w-2/3 h-auto grid grid-cols-2 grid-rows-2 md:grid-cols-4 gap-4">
+        <div className="md:w-2/3 h-auto grid grid-cols-2 grid-rows-2 lg:grid-cols-4 gap-4">
             {services.map((service, index) => {
               if (index === 4){
                 return (
@@ -63,8 +64,12 @@ export function Services() {
                     <div className="inset-0 w-full h-auto object-cover absolute bg-overlayServices z-10 hover:none" style={{
                       pointerEvents:"none"}}></div>
                         <img src={service.image} alt={service.title} className="w-full object-contain opacity-70"/>
-                        <div className="absolute inset-0 flex items-center justify-center">
-                            <span className="text-white text-lg md:text-2xl font-bold text-center z-10"> {service.title}</span>
+                        <div className="absolute text-white inset-0 flex flex-col md:flex-row  items-center justify-center z-10 md:gap-2">
+                            <span className="text-lg md:text-xl font-bold text-center"> 
+                              {service.title}
+                            </span>
+                            <PiInstagramLogoBold size={25}/>
+                            
                         </div>
                   </a>
                   </div>
@@ -75,7 +80,7 @@ export function Services() {
                       <div className="inset-0 w-full h-auto object-cover absolute bg-overlayServices z-10 hover:none"></div>
                       <img src={service.image} alt={service.title} className="w-full object-contain opacity-70"/>
                       <div className="absolute inset-0 flex items-center justify-center">
-                          <span className="text-white text-lg md:text-2xl font-bold text-center z-10"> {service.title}</span>
+                          <span className="text-white text-lg md:text-xl text-wrap font-bold text-center z-10"> {service.title}</span>
                       </div>
                   </div>
                 )

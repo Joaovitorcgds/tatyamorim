@@ -12,28 +12,28 @@ import { PiInstagramLogoBold } from "react-icons/pi";
 export function Services() {
     const services = [
         {
-          title: "Mechas",
+          title: "Serviço de Mechas",
           image: `${mechas}`, // substitua pelo link correto ou use imagens locais
           colSpan: "col-span-2",
           rowSpan: "row-span-2",
           height: "w-auto"
         },
         {
-          title: "Progressivas",
+          title: "Serviço de  Progressivas",
           image: `${progressiva}`,
           colSpan: "col-span-1",
           rowSpan: "row-span-1",
           height: "h-1/2"
         },
         {
-          title: "Cortes",
+          title: "Serviço de Cortes",
           image: `${corte}`,
           colSpan: "col-span-1",
           rowSpan: "row-span-1",
           height: "h-1/2"
         },
         {
-          title: "Maquiagens e Penteados",
+          title: "Serviço de Maquiagens e Penteados",
           image: `${penteado}`,
           colSpan: "col-span-1",
           rowSpan: "row-span-1",
@@ -52,7 +52,7 @@ export function Services() {
       <section className="flex flex-col justify-between items-center pt-10 px-4 bg-[#f0dedc] w-full h-auto">
         <div>
             <h2 className="text-4xl md:text-7xl font-bold text-center text-primary mb-2">Nossos Serviços</h2>
-            <p className="text-center text-[#9e4d53] md:font-semibold mb-10">Confira abaixo os serviços que o Studio de beleza Tatiane amorim pode promover para o bem-estar dos seus clientes.</p>
+            <p className="text-center text-[#9e4d53] md:font-semibold mb-10 max-w-6xl">Confira abaixo os serviços como Mechas, Progressiva, Escova com tratamento, Coloração e Descoloração que o Studio de beleza Tatiane amorim pode promover para o bem-estar dos seus clientes.</p>
         </div>
 
         <div className="md:w-2/3 h-auto grid grid-cols-2 grid-rows-2 lg:grid-cols-4 gap-4">
@@ -65,11 +65,10 @@ export function Services() {
                       pointerEvents:"none"}}></div>
                         <img src={service.image} alt={service.title} className="w-full object-contain opacity-70"/>
                         <div className="absolute text-white inset-0 flex flex-col md:flex-row  items-center justify-center z-10 md:gap-2">
-                            <span className="text-xl font-bold text-center"> 
-                              {service.title}
-                            </span>
-                            <PiInstagramLogoBold size={25}/>
-                            
+                          <span className="text-xl font-bold text-center"> 
+                            {service.title}
+                          </span>
+                          <PiInstagramLogoBold size={25}/>
                         </div>
                   </a>
                   </div>

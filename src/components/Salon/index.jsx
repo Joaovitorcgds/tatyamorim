@@ -32,9 +32,8 @@ export function Salon() {
           <div className="md:max-w-3xl text-center relative flex flex-col items-center">
             <h3 className="text-4xl md:text-6xl font-bold text-center text-[#b5676c] mb-2">Espaço Perfeito para Profissionais</h3>
             <div>
-              <span className='text-lg leading-7 text-white md:font-semibold'>Alugue um ambiente exclusivo com espaços para locação, oferecemos a estrutura ideal para você atender seus clientes com conforto e estilo.<br/>
-              Estamos localizado na Rua Padre Manso, 83 - Madureira.<br/>
-              </span>  
+              <span className='text-lg leading-7 text-white '>Alugue um ambiente exclusivo com espaços para locação, oferecemos a estrutura ideal para você atender seus clientes com conforto e estilo.<br/></span>
+              <span className='font-semibold text-xl leading-7 text-white'>Estamos localizado na Rua Padre Manso, 83 - Madureira.<br/></span>  
               <span className='text-lg leading-7 text-white'>Para mais informações, clique no botão de saiba mais</span>
             </div>
 
